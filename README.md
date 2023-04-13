@@ -38,6 +38,49 @@ Features
     React.js for the client-side user interface
     Material-UI for the design components
 
+## Sample database schema:
+
+The MongoDB database can have the following collections:
+
+    Course
+
+    courseId
+    courseName
+    courseDescription
+    startDate
+    endDate
+
+    Module
+
+    moduleId
+    courseId
+    moduleName
+    moduleDescription
+
+    Topic
+
+    topicId
+    moduleId
+    topicName
+    topicDescription
+
+    Page
+
+    pageId
+    topicId
+    pageNumber
+    pageTitle
+    pageDescription
+
+    LearningItem
+
+    itemId
+    pageId
+    itemType
+    itemTitle
+    itemDescription
+    itemOrder
+
 ## Setup
 
     Clone the repository
@@ -77,6 +120,10 @@ API Documentation
         GET: get a learning item by ID
         PUT: update a learning item by ID
         DELETE: delete a learning item by ID
+
+
+
+        
 
 For detailed documentation and examples, please refer to the API documentation included in the codebase.
 ## Conclusion
